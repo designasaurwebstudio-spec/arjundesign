@@ -2,7 +2,8 @@
 
 /* Desktop defaults */
 .intro-br-mob { display: none; }
-.ch1-mob-br { display: none; }
+.ch1-tail { white-space: nowrap; }
+[data-chapter="work"] .ch-title { max-width: none; white-space: nowrap; }
 
 /* Mobile adaptations (< 768px) */
 @media (max-width: 768px) {
@@ -47,9 +48,16 @@
   .intro-br-mob { display: block; }
   .intro-br-desk { display: none; }
 
-  /* Item 2: Mobile Chapter 01 line break */
-  .ch1-mob-br { display: block; }
+  /* Item 2: Mobile Chapter 01 line wrap */
   .ch-line { max-width: 38ch; }
+
+  /* Chapter 04: Single-line heading "Work under wraps" */
+  [data-chapter="work"] .ch-title {
+    max-width: none !important;
+    white-space: nowrap !important;
+    text-wrap: nowrap !important;
+    font-size: clamp(28px, 8.2vw, 36px) !important;
+  }
 
   /* Item 3: Mobile Chapter 03 heading break: "The ground is" on line 1, "moving" on line 2 */
   [data-chapter="refraction"] .ch-title {
