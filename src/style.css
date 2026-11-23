@@ -33,10 +33,10 @@
     margin-right: 6px !important;
   }
 
-  /* Vertical progress bar (.rail): right padding away from screen edge, placed below nav */
+  /* Vertical progress bar (.rail): right padding away from screen edge, placed below nav with clear gap */
   .rail {
     right: max(16px, env(safe-area-inset-right, 16px)) !important;
-    top: calc(max(16px, env(safe-area-inset-top, 16px)) + 191px) !important;
+    top: calc(max(16px, env(safe-area-inset-top, 16px)) + 222px) !important;
     height: min(22vh, 160px) !important;
   }
   .rail a span {
