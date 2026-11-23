@@ -161,3 +161,7 @@
   .ft-tag.on .ft-lead { transform: scaleX(1) !important; }
   .ft-tag.on span { opacity: 1 !important; filter: none !important; transform: none !important; }
 }
+
+.top { z-index: 50 !important; }
+.mark { cursor: pointer !important; pointer-events: auto !important; }
+.mark * { cursor: pointer !important; pointer-events: auto !important; }
