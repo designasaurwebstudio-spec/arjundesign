@@ -107,5 +107,9 @@
     <div id="cursor" aria-hidden="true"><i class="c-dot"></i><i class="c-ring"></i></div>
 
     <script type="module" src="/src/main.js"></script>
+    <script type="module">
+      import { inject } from '@vercel/analytics';
+      inject();
+    </script>
   </body>
 </html>
